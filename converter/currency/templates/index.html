@@ -10,6 +10,9 @@
         {{form.as_p}}
         <button type="submit">send</button>
     </form>
+    {% if result %}
+    <p>Result: {{result}}</p>
+    {% endif %}
 
 </body>
 </html>
