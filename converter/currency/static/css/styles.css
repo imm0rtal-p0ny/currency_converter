@@ -1,0 +1,73 @@
+.container {
+    box-shadow: 100 10px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: whitesmoke;
+    display: flex;
+    position: fixed; 
+    padding: 20px 20px;
+    position: fixed; /* Фіксована позиція */
+    top: 50%; /* Встановлюємо позицію по вертикалі */
+    left: 50%; /* Встановлюємо позицію по горизонталі */
+    transform: translate(-50%, -50%); /* Зсуваємо div назад і наліво на половину його розміру */
+}
+
+td {
+    width: 25%;
+    height: 2em;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+
+th {
+    padding-bottom: 25px;    
+    font-size: 40px;
+}
+
+body {
+    background-image: url('/static/images/background.jpg');
+    background-repeat: no-repeat;
+    
+}
+
+button {
+    border-radius: 10px;    
+    margin-left: 25px;
+    margin-right: 150px;
+    padding: 7px;
+    color: goldenrod;
+    background-color: black;
+    height: 40px;
+    width: 150px;
+    font-size: large;
+    
+}
+
+input{
+    border-radius: 10px;
+    width: 240px;
+    height: 50px;
+    font-size: 30px;
+}
+
+select {
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+}
+
+input[type="checkbox"]{
+    padding-top: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.done {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+
+ 

@@ -17,9 +17,11 @@ def index(request):
         if form.is_valid():
             currency1 = Decimal(form.cleaned_data['currency1'])
             currency2 = Decimal(form.cleaned_data['currency2'])
-            count = Decimal(form.cleaned_data['count'])
+            count1 = Decimal(form.cleaned_data['count1'])
             is_round = form.cleaned_data['round_num']
-            result = count * currency1 / currency2
+            result = count1 * currency1 / currency2
+            form.fields['count2'].initial = 5
+
             if is_round:
                 result = result.quantize(Decimal('0.00'), rounding=ROUND_UP)
 
